@@ -1,0 +1,6 @@
+{
+  "name": "NEXTDEV STUDIO",
+  "description": "Bold brutalist single-page website for NEXTDEV STUDIO - Web Development, AI Automation, and Content Strategy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

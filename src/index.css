@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-archivo: "Archivo Black", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-brand-blue: #3D2AFF;
+  --color-brand-black: #0A0A0A;
+  --color-brand-offwhite: #F2F1EC;
+  --color-brand-white: #FFFFFF;
+}
+
+/* Custom styles for Brutalist / Refined Art aesthetic */
+.brutal-title {
+  font-family: "Archivo Black", "Inter", sans-serif;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+}
+
+.brutalist-border {
+  border: 1px solid #0A0A0A;
+}
+
+.brutalist-border-blue {
+  border: 1px solid #3D2AFF;
+}
+
+/* Soft elegant shadow for Artistic Flair instead of heavy offset blocks */
+.brutalist-shadow {
+  box-shadow: 4px 4px 0px 0px #0A0A0A;
+}
+
+.brutalist-shadow-blue {
+  box-shadow: 4px 4px 0px 0px #3D2AFF;
+}
+
+.brutalist-shadow-white {
+  box-shadow: 4px 4px 0px 0px #FFFFFF;
+}
+
+/* Angular cut corner cards using CSS clip-path */
+.clip-angular-br {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
+}
+
+.clip-angular-tl-br {
+  clip-path: polygon(24px 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%, 0 24px);
+}
+
+.angular-cut {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 92% 100%, 0 100%);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Noise overlay for premium texturing */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Hide scrollbar for interactive process scroll on certain browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
