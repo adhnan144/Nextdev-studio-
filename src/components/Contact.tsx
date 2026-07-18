@@ -202,7 +202,7 @@ export default function Contact() {
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
-                          placeholder="e.g., Anil from Kochi"
+                          placeholder="e.g., name/ business"
                           className={`w-full p-4 bg-brand-offwhite border rounded-xl font-poppins text-xs sm:text-sm text-brand-black focus:outline-none focus:border-brand-blue transition-colors ${
                             errors.name ? "border-red-500" : "border-brand-black/20"
                           }`}
